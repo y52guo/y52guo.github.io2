@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website For Roger </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/21e9643539.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contract</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p> Data analyser</p>
+            <h1>Hi, I'm <span>Roger</span> <br>GUO from Canada</h1>
+        </div>
+    </div>
+</div>
+<!-- ---------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/self.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    My name is Roger Guo, and I am currently a student at the University of Waterloo. 
+                    I recently completed my first year of studies with a GPA of 4.0, which reflects my dedication and passion for learning.
+
+I have a strong interest in data analysis, and I have honed my skills in SQL, which allows me to efficiently manage and analyze large datasets. 
+In addition to my expertise in SQL, I have also learned Python and C, two powerful programming languages that I use for various projects and problem-solving tasks.
+            </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experiences')">Experiences</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data analysis</span><br>By using Excel to finish pivot table</li>
+                        <li><span>Data analysis</span><br>By using R to finish data graph</li>
+                        <li><span>Data analysis</span><br>By using SQL grab the data needed.</li>
+                        <li><span>Business Planning and Operation Intern </span><br>Finish the NYU Shanghai Student Association project.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experiences">
+                    <ul>
+                        <li><span>2021</span><br>Exercising program in pivot table making. (Excel)</li>
+                        <li><span>2023</span><br>Cost of living, bussiness cycle, growth and inequality between 4 countries. (R) </li>
+                        <li><span>2024</span><br>Grabbing data form Amazon's public data base to do data separation. (SQL)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 Sep</span><br>First year A in University of Waterloo of Honor Math with GPA 3.9 average and 4.0 in math</li>
+                        <li><span>2024 Jan</span><br>First year B in University of Waterloo with GPA 4.0 in both average and subject.</li>
+                        <li><span>2024 May</span><br>Second year A in University of Waterloo transferring into Honor Math with coop by high GPA</li>
+                        <li><span>2024 Aug</span><br>Second year B in University of Waterloo transferring into Computer based data science by total 3.9 GPA</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</div>
+<!---------services--------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Analyser Assistance</h2>
+                <p>
+                   1. Data Cleaning: Prepare and clean datasets by removing inconsistencies, handling missing values, and ensuring data integrity.<br><br>
+                   2. Data Visualization: Create charts, graphs, and dashboards to visually represent data trends and insights using tools like Excel, Python (Matplotlib, Seaborn), or R.<br><br>
+                   3. Statistical Analysis: Perform basic statistical tests and descriptive analysis to summarize and interpret data.<br><br>
+                   4. Data Collection: Assist in gathering data from various sources, including surveys, databases, and online platforms.<br><br>
+                   5. Documentation: Help document analysis procedures, methods, and results to ensure clarity and reproducibility of the work.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-computer-mouse"></i>
+                <h2>Programming Tester</h2>
+                <p>
+                   1. Code Review: Review code for errors, inefficiencies, and best practices to ensure high-quality, maintainable code.<br><br>
+                   2. Bug Identification: Identify and document bugs or issues within the code, ensuring they are reproducible and well-defined.<br><br>
+                   3. Automated Testing: Develop and run automated tests to validate the functionality and performance of programs.<br><br>
+                   4. Debugging: Assist in debugging programs to resolve issues and improve code stability.<br><br>
+                   5. Documentation: Create clear documentation of test cases, bug reports, and debugging processes for future reference.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--------portfolio--------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/gta-real-estate.png" alt="GTA Real Estate Price Prediction">
+                <div class="layer">
+                    <h3>GTA Real Estate Price Prediction</h3>
+                    <p>Leveraged machine learning to analyze and predict real estate prices in the GTA. Developed a web scraper in Python and implemented models with scikit-learn for accurate predictions.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/flight-info-dashboard.png" alt="Flight Info Dashboard">
+                <div class="layer">
+                    <h3>Flight Info Dashboard</h3>
+                    <p>Designed a flight tracking system in C, utilizing Abstract Data Types (ADT) and dynamic memory management. Enhanced data management and system efficiency.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/economic-data-analysis.png" alt="Economic Data Analysis">
+                <div class="layer">
+                    <h3>Economic Data Analysis</h3>
+                    <p>Analyzed cost of living datasets in R, created visualizations of GDP growth across 10+ countries, and structured data into comprehensive tables.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/business-planning-intern.png" alt="Business Planning and Operation Intern">
+                <div class="layer">
+                    <h3>Business Planning and Operation Intern</h3>
+                    <p>Collaborated with NYU Shanghai to research international student credit card applications. Analyzed data using Python and Tableau, and presented findings to Visa's senior management.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+
+<!-- ----------contract------------->
+<div id="contract">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1><div class="sub-title">Contact Me</div></h1>
+                <p><i class="fa-regular fa-paper-plane"></i> y52guo@uwaterloo.ca</p>
+                <p><i class="fa-solid fa-phone"></i> +1 4378189423</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="www.linkedin.com/in/yuejia-guo-064604308"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+                <a href="images/Roger Guo's resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email"required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©Roger. Made with <i class="fa-solid fa-heart"></i> self tutorial</p>
+    </div>
+</div>  
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+
+    }
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby1bsokpl1YJtSjVZ8c0R1ud-siHInlUXf6NlgY9a8uQ139R8KM7NApwecpn11qJjw9/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
